@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
     // In development the API is proxied, so no API origin is hardcoded in the source.
-    proxy: { '/api': { target: 'http://localhost:5000', changeOrigin: true } },
+    proxy: { '/api': { target: 'https://yusafir.onrender.com', changeOrigin: true } },
   },
   build: {
     rollupOptions: {
