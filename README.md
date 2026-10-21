@@ -2,8 +2,8 @@
 
 A travel booking platform for Bangladesh. Visitors browse destinations and stays, create an account, and book. Admins manage destinations, stays, users and bookings from a role-based dashboard.
 
-**Live site:** https://yusafir-eight.vercel.app
-**Front-end Repository:** [https://github.com/Tawhidh05/yusafir](https://github.com/Tawhidh05/yusafir/tree/main)
+**Live site:** https://yusafir-eight.vercel.app<br>
+**Front-end Repository:** [https://github.com/Tawhidh05/yusafir](https://github.com/Tawhidh05/yusafir/tree/main)<br>
 **Back-end Repository:** [https://github.com/Tawhidh05/yusafir](https://github.com/Tawhidh05/yusafir/tree/serv)
 
 ## Tech stack
