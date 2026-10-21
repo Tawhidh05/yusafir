@@ -10,7 +10,9 @@ export default function BlogPreview() {
     <Section id="blog" tone="muted" title="From the blog" subtitle="Travel guides and platform news."
       action={<Button to="/blog" variant="outline">Read the blog</Button>}>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-        {isLoading ? Array.from({ length: 3 }, (_, i) => <CardSkeleton key={i} />) : data.items.map((p) => <PostCard key={p._id} post={p} />)}
+        {isLoading
+          ? Array.from({ length: 3 }, (_, i) => <CardSkeleton key={i} />)
+          : (data?.items ?? []).map((p) => <PostCard key={p._id} post={p} />)}
       </div>
     </Section>
   );

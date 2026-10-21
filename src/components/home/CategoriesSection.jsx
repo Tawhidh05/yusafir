@@ -11,7 +11,7 @@ export default function CategoriesSection() {
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {isLoading
           ? Array.from({ length: 4 }, (_, i) => <Skeleton key={i} className="h-40" />)
-          : data.items.map((c) => (
+          : (data?.items ?? []).map((c) => (
               <Link key={c.category} to={`/explore?category=${encodeURIComponent(c.category)}`} className="group relative block h-40 overflow-hidden rounded-xl">
                 <img src={c.image} alt="" loading="lazy" className="size-full object-cover transition duration-500 group-hover:scale-105" />
                 <span className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
